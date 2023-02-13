@@ -1,5 +1,6 @@
-FROM centos				
+FROM centos:latest				
 MAINTAINER bpawar401@gmail.com		
+sudo rm -r /var/cache/dnf
 RUN yum install -y httpd \	
 zip\				
 unzip				
